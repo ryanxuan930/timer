@@ -15,7 +15,7 @@ export default defineComponent({
   setup() {
     const color = ref('black');
     const now = new Date();
-    const target = new Date('2022-11-02 16:00:00');
+    const target = new Date('2022-11-02T16:00:00');
     return {
       color, 
       timeData: (data: any) => {

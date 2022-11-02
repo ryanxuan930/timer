@@ -1,5 +1,5 @@
 <template>
-  <div :class="{'yellow': color == 'yellow', 'red': color == 'red'}" style="font-size:200pt;">
+  <div :class="{'yellow': color == 'yellow', 'red': color == 'red'}" style="font-size:120pt;">
     <vue-countdown :time="time" :interval="100" v-slot="{ hours, minutes, seconds, milliseconds }" @progress="timeData">
     {{ String(hours).padStart(2, '0') }}:{{ String(minutes).padStart(2, '0') }}:{{ String(seconds).padStart(2, '0') }}.{{ Math.floor(milliseconds / 100) }}
   </vue-countdown>

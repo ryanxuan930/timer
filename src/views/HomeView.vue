@@ -1,6 +1,6 @@
 <template>
   <div :class="{'yellow': color == 'yellow', 'red': color == 'red'}" style="font-size:200pt;">
-    <vue-countdown :time="80*60*1000" :interval="100" v-slot="{ hours, minutes, seconds, milliseconds }" @progress="timeData">
+    <vue-countdown :time="70*60*1000" :interval="100" v-slot="{ hours, minutes, seconds, milliseconds }" @progress="timeData">
     {{ hours }}:{{ minutes }}:{{ seconds }}.{{ Math.floor(milliseconds / 100) }}
   </vue-countdown>
   </div>
